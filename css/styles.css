@@ -74,6 +74,10 @@ li {
     cursor: pointer;
     line-height: 1.5;
     letter-spacing: 0.04em ;
+    display: block;
+    min-width: 169px;
+    height: 56px;
+    border-radius: 4px;
 }
 
 .button:hover,:focus {
@@ -87,11 +91,10 @@ li {
 }
 
 .header {
-    padding: 24px;
-    width: 1158px;
     border-bottom: var(--color-cornflower);
-
-
+    width: 1440px;
+    height: 72px;
+    
 }
 
 
@@ -101,7 +104,6 @@ li {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--color-navy-blue);
-    f
 }
 
 
@@ -114,6 +116,7 @@ li {
     text-transform: uppercase;
     color: var(--color-iris);
     font-family: "Raleway", sans-serif;
+    
 }
 
 
@@ -127,7 +130,7 @@ li {
 }
 
 .header-address {
-    font-style: normal
+    font-style: normal;
 }
 
 .header-nav-list{
@@ -160,12 +163,17 @@ li {
 }
     
 //=================section1===============//
+
+
 .business {
     
 }
 
 .business {
     background-color: var(--color-navy-blue);
+    width: 1440px;
+    height: 600px;
+    padding: 188px 0;
 }
 
 .business-text {
@@ -175,6 +183,7 @@ li {
     letter-spacing: 0.02em;
     text-align: center;
     color: var(--color-white);
+    max-width: 469px;
 }
 
 //=================section2===============//
@@ -314,3 +323,7 @@ li {
     letter-spacing: 0.02em;
 }
 //============home-work-3=============//
+
+
+
+
