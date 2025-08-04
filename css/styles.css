@@ -18,20 +18,17 @@
 
 img {
     display: block;
+    max-width: 100%;
+    height: auto; 
 }
 
-.container {
-    max-width: ;
-    padding-left: ;
-    padding-right: ;
-    margin-left: ;
-    margin-right: ;
-}
+
 
 .container {
     width: 1440px;
-    padding-right: 0px;
-    padding-left: 0px;
+    margin: 0 auto;
+    padding: 0 15px;
+    max-width: 100%;
 }
 
 //================body=================//
@@ -42,9 +39,15 @@ body {
 }
 
 body {
+    max-width: 1440px;
+    margin: auto;
+}
+
+body {
     font-family: "Roboto",sans-serif;
     color: var(--color-slate);
     background-color: var(--color-white);
+    
 }
 
 h1, h2, h3 {
@@ -78,6 +81,7 @@ li {
     min-width: 169px;
     height: 56px;
     border-radius: 4px;
+    margin: 0px auto;
 }
 
 .button:hover,:focus {
@@ -91,9 +95,10 @@ li {
 }
 
 .header {
-    border-bottom: var(--color-cornflower);
+    border-bottom: 1px solid; var(--color-cornflower);
     width: 1440px;
     height: 72px;
+    display: flex;
     
 }
 
@@ -104,6 +109,7 @@ li {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--color-navy-blue);
+    
 }
 
 
@@ -115,7 +121,7 @@ li {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--color-iris);
-    font-family: "Raleway", sans-serif;
+    font-family: "Raleway" ,sans-serif;
     
 }
 
@@ -131,6 +137,7 @@ li {
 
 .header-address {
     font-style: normal;
+    margin: auto;
 }
 
 .header-nav-list{
@@ -139,12 +146,14 @@ li {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--navy-blue);
+    cursor: pointer;
+    display: flex;
+    gap: 40px;
+
 }
 .nav-list-contact:hover, :focus {
     color: var(--color-okean);
-   
 }
-
 
 .header-social-list{
 
@@ -174,6 +183,8 @@ li {
     width: 1440px;
     height: 600px;
     padding: 188px 0;
+    
+
 }
 
 .business-text {
@@ -183,13 +194,17 @@ li {
     letter-spacing: 0.02em;
     text-align: center;
     color: var(--color-white);
-    max-width: 469px;
+    max-width: 496px;
+    margin: 0px auto 48px auto;
 }
 
 //=================section2===============//
+.paragraph {
+    padding: 120px 0;
+    margin: 8px;
+}
 
-
-.services {
+.element-1 {
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
@@ -203,6 +218,7 @@ li {
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: var(--color-navy-blue);
+    margin-bottom: 8px;
 }
 
 .paragraph-p {
@@ -212,16 +228,36 @@ li {
     letter-spacing: 0.02em;
     color: var(--color-slate);
 }
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
 
+.element-1 {
+    display: flex;
+    gap: 24px;
+
+}
 //=================section3===============//
 
-.team-our {
 
+
+.team-our {
 }
 
 .team-our {
     background-color: var(--color-cloud);
+    padding: 120px 0;
 }
+
 
 .team {
     font-weight: 700;
@@ -231,27 +267,52 @@ li {
     text-transform: capitalize;
     text-align: center;
     color: var(--color-navy-blue);
+    list-style: none;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 72px;
 }
 
 .team-li {
     background-color: var(--color-white);
+    list-style: none;
+    text-align: center;
+    border-radius: 0 0 4px 4px;
+    width: calc((100% - 72px) / 4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
+.team-hero-pothetion {
+    padding: 32px 0;
+}
 .team-hero {
     font-weight: 500;
     font-size: 20px;
-    line-height: 1.2;
+    line-height: 24px;
     letter-spacing: 0.02em;
     color: var(--color-navy-blue);
+    text-align: center;
+    margin-bottom: 8px;
 }
 
 .text {
     font-weight: 400;
     font-size: 16px;
-    line-height: 1.5;
+    line-height: 24px;
     letter-spacing: 0.02em;
     color: var(--color-slate);
+    text-align: center;
     }
+
+.team-photo {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+    padding-left: 0;
+}
 
 //=================section4===============//
 
@@ -259,7 +320,8 @@ li {
 }
 
 .portfolio {
-
+    padding-top: 120px;
+    padding-bottom: 120px;
 }
 
 .our-portfolio {
@@ -270,6 +332,7 @@ li {
     text-align: center;
     text-transform: capitalize;
     color: var(--color-navy-blue);
+    margin-bottom: 72px;
 }
 
 .our-portfolio-b {
@@ -288,6 +351,24 @@ li {
     color: var(--color-slate);
 }
 
+.service-photo {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+    padding-left: 0;
+}
+
+.name-s {
+    padding: 32px 16px;
+    border: 1px solid;
+    border-top: none;
+    margin-bottom: 8px;
+}
+
+.li-name {
+    row-gap: 48px;
+}
+
 //===============footer===============//
 
 .footer {
@@ -297,6 +378,7 @@ li {
 .footer {
     background-color: var(--color-navy-blue);
     font-family: "Raleway",sans-serif;
+    padding: 100px 0;
 }
 
 .footer-web {
@@ -306,6 +388,9 @@ li {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--color-iris);
+    margin-bottom: 16px;
+    display: inline-block;
+    margin-bottom: 16px;
 }
 
 .footer-studio {
