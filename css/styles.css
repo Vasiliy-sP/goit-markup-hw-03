@@ -25,7 +25,7 @@ img {
 
 
 .container {
-    width: 1440px;
+    width: 1158px;
     margin: 0 auto;
     padding: 0 15px;
     max-width: 100%;
@@ -100,10 +100,8 @@ li {
     border-bottom: 1px solid var(--color-cornflower);
 }
 
-.container-header {
-    display: flex;
-    width: 1158px;
-}
+.container {}
+
 
 
 .header-nav {
@@ -149,9 +147,9 @@ li {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--navy-blue);
-    cursor: pointer;
     display: flex;
     gap: 40px;
+    cursor: pointer;
 }
 .nav-list-contact:hover, :focus {
     color: var(--color-okean);
