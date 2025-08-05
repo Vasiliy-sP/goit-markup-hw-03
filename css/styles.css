@@ -100,10 +100,6 @@ li {
     border-bottom: 1px solid var(--color-cornflower);
 }
 
-.container {}
-
-
-
 .header-nav {
     font-weight: 500;
     font-size: 16px;
@@ -114,6 +110,11 @@ li {
     align-items: center;
 }
 
+.flex-header-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 
 
 .header-nav-studio {
