@@ -33,27 +33,17 @@ img {
 
 //================body=================//
 
-
 body {
-
-}
-
-body {
-    max-width: 1440px;
-    margin: auto;
 }
 
 body {
     font-family: "Roboto",sans-serif;
     color: var(--color-slate);
     background-color: var(--color-white);
-    
+    padding: 0;
+    margin: 0;
 }
 
-h1, h2, h3 {
-    font-family: , sans-serif
-}
-    
 ul {
     list-style-type: none;
 }
@@ -95,8 +85,6 @@ li {
 }
 
 .header {
-    width: 1440px;
-    height: 72px;
     border-bottom: 1px solid var(--color-cornflower);
 }
 
@@ -139,7 +127,7 @@ li {
 }
 
 .header-address {
-    
+    font-style: normal;   
 }
 
 .header-nav-list{
@@ -157,7 +145,8 @@ li {
 }
 
 .nav-list-contact-a {
-    padding: 24px 0
+    display: block;
+    padding: 24px 0;
 }
 
 .header-social-list {
@@ -187,11 +176,7 @@ li {
 
 .business {
     background-color: var(--color-navy-blue);
-    width: 1440px;
-    height: 600px;
     padding: 188px 0;
-    
-
 }
 
 .business-text {
@@ -211,7 +196,6 @@ li {
 
 .paragraph {
     padding: 120px 0;
-    margin-bottom: 8px;
 }
 
 .element-one {
@@ -222,7 +206,6 @@ li {
     color: var(--color-navy-blue);
     display: flex;
     gap: 24px;
-    padding: 120px 0;
 }
 
 .paragraph-li {
@@ -236,6 +219,8 @@ li {
     letter-spacing: 0.02em;
     color: var(--color-navy-blue);
     margin-bottom: 8px;
+    margin: 0;
+    padding: 0;
 }
 
 .paragraph-p {
@@ -244,12 +229,14 @@ li {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--color-slate);
+    padding: 0;
+    margin: 0;
 }
 .visually-hidden {
     position: absolute;
     width: 1px;
     height: 1px;
-    margin: -1px;
+    margin: 0;
     border: 0;
     padding: 0;
     white-space: nowrap;
@@ -296,14 +283,11 @@ li {
     text-align: center;
     border-radius: 0 0 4px 4px;
     width: calc((100% - 72px) / 4);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
 }
 
 .team-hero-pothetion {
-    padding: 32px 0;
+    padding: 0;
+    margin: 0;
 }
 .team-hero {
     font-weight: 500;
@@ -380,21 +364,14 @@ li {
 
 .name-s {
     padding: 32px 16px;
-    margin-bottom: 8px;
     border: 1px solid var(--color-cornflower);
     border-top: none;
-    width: 360px;
-    height: 120px;
 }
 
 .li-name {
-    row-gap: 48px;
     width: calc((100% - 48px) / 3);
 }
 
-.li-name :last-child {
-    margin-right: 0;
-}
 //===============footer===============//
 
 .footer {
@@ -429,9 +406,12 @@ li {
 }
 
 .footer-text {
+    font-weight: 400;
+    font-size: 16px;
     line-height: 1.5;
     color: var(--color-cloud);
     letter-spacing: 0.02em;
+    max-width: 270px;
 }
 //============home-work-3=============//
 
