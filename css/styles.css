@@ -212,13 +212,12 @@ li {
 }
 
 .paragraph-li {
-    background-color: var(--color-white);
-    border-radius: 0 0 4px 4px;
-}
-
-.paragraph-li:first-child {
     flex-basis: calc((100% - 3 * 24px) / 4);
 }
+
+/* .paragraph-li:first-child {
+    flex-basis: calc((100% - 3 * 24px) / 4);
+} */
 
 .paragraph-s {
     font-weight: 500;
