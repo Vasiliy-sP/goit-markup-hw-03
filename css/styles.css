@@ -209,7 +209,7 @@ li {
 }
 
 .paragraph-li {
-    width: calc((100% - 72px) / );
+    width: calc((100% - 72px) / 4) ;
 }
 
 .paragraph-s {
