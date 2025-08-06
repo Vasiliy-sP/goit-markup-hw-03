@@ -209,7 +209,7 @@ li {
 }
 
 .paragraph-li {
-    width: calc((100% - 72px) / 4);
+    width: calc((100% - 72px) / );
 }
 
 .paragraph-s {
@@ -219,7 +219,7 @@ li {
     letter-spacing: 0.02em;
     color: var(--color-navy-blue);
     margin-bottom: 8px;
-    margin: 0;
+    margin: 8px;
     padding: 0;
 }
 
