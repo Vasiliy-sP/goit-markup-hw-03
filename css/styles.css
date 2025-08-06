@@ -16,6 +16,12 @@
 --color-dairy: #FCFCFC ;
 }
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 img {
     display: block;
     max-width: 100%;
@@ -32,9 +38,6 @@ img {
 }
 
 //================body=================//
-
-body {
-}
 
 body {
     font-family: "Roboto",sans-serif;
@@ -209,9 +212,12 @@ li {
 }
 
 .paragraph-li {
-    width: calc((100% - 72px) / 4);
     background-color: var(--color-white);
     border-radius: 0 0 4px 4px;
+}
+
+.paragraph-li:first-child {
+    flex-basis: calc((100% - 3 * 24px) / 4);
 }
 
 .paragraph-s {
@@ -221,7 +227,6 @@ li {
     letter-spacing: 0.02em;
     color: var(--color-navy-blue);
     margin-bottom: 8px;
-    margin: 8px;
     padding: 0;
 }
 
@@ -415,7 +420,7 @@ li {
     letter-spacing: 0.02em;
     max-width: 270px;
 }
-//============home-work-3=============//
+
 
 
 
