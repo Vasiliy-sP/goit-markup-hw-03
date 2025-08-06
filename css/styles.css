@@ -236,7 +236,7 @@ li {
     position: absolute;
     width: 1px;
     height: 1px;
-    margin: 0;
+    margin: -1px;
     border: 0;
     padding: 0;
     white-space: nowrap;
@@ -286,7 +286,7 @@ li {
 }
 
 .team-hero-pothetion {
-    padding: 0;
+    padding: 32px 0;
     margin: 0;
 }
 .team-hero {
